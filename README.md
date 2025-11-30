@@ -13,48 +13,56 @@ The square syringe design consists of two primary components:
 
 ### Recommended Print Settings
 
-| Parameter                     | Recommended Value(s)
-|-----------------------------|------------------|
-| Layer Height                | 0.08 mm or 0.12 mm
-| Material - Barrel         | PETG
-| Material - Plunger       | PLA
-| Print Speed              | 30-40 mm/s
-| Nozzle Temperature     | Material-specific
-| Supports Required     | None
+| Parameter                | Recommended Value(s)          |
+|-----------------------|-----------------------------|
+| Layer Height        | 0.08 mm or 0.12 mm         |
+| Material - Barrel | PETG                       |
+| Material - Plunger| PLA                       |
+| Print Speed       | 30-40 mm/s                 |
+| Nozzle Temperature| Material-specific         |
+| Supports Required| None                      |
 
 ### Printing Recommendations
 
 1. **No supports are required** for either the barrel or plunger due to the self-supporting geometry.
 
 2. **Critical Print Parameters**:
-   | Component   | Key Considerations
-   | ---------- | ----------------|
-   | Barrel  | Print with maximum wall thickness (4-5 walls) to ensure structural integrity and smooth internal surfaces
-   | Plunger| Print with maximum wall thickness (4-5 walls) to maintain precise dimensional accuracy of the thin side walls
+
+| Component | Key Considerations
+| -------- | ---------------|
+| Barrel | Print with maximum wall thickness (4-5 walls) to ensure structural integrity and smooth internal surfaces
+| Plunger| Print with maximum wall thickness (4-5 walls) to maintain precise dimensional accuracy of the thin side walls
 
 ## Post-Processing Procedure
 
-The plunger side walls are intentionally printed at 0.05 mm thickness to achieve optimal sealing while maintaining smooth operation. Post-processing is required to achieve the necessary surface finish:
+The plunger side walls are intentionally printed at 0.05 mm thickness to achieve optimal sealing while maintaining smooth operation. Post-processing is required to achieve the necessary surface finish.
+
+![Polishing Plunger](Polishing_Plunger.jpg)
+
+The primary post-processing step involves smoothing the plunger side walls using a laser-etched glass file:
+
+- Use a laser-etched glass file specifically on the **plunger side walls only**
+- Make multiple light passes over the entire surface of each plunger wall
+- Focus on removing visible layer lines and creating a uniform, smooth surface
+
+If minor roughness is present on the internal surfaces of the barrel, the same glass file can be used to lightly smooth these surfaces.
+
+![Material Removal Barrel](Material_Removal_Barrel.jpg)
 
 ### Required Post-Processing Steps
 
-1. **Surface Preparation**:
-   | Step                          | Purpose
-   | ---------------------------| ----|
-   | Laser-etched glass file | Smooth the 0.05 mm thick plunger side walls and remove layer lines
-   | Multiple passes (3-5)  | Progressively refine surface finish and ensure compatibility with barrel internal surfaces
+| Step                          | Purpose
+| ---------------------------| ----|
+| Laser-etched glass file | Smooth the 0.05 mm thick plunger side walls and remove layer lines
+| Multiple passes (3-5)  | Progressively refine surface finish and ensure compatibility with barrel internal surfaces
 
-2. **Filing Procedure**:
-   - Use a laser-etched glass file specifically on the **plunger side walls only**
-   - Make multiple light passes over the entire surface of each plunger wall
-   - Focus on removing visible layer lines and creating a uniform, smooth surface
-   - The same glass file can be used to lightly smooth any minor roughness found on the internal surfaces of the barrel
-   - Check https://www.instagram.com/reel/DQ77J7dAV2H/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==
-   - Laser Etched Glass File Links https://s.click.aliexpress.com/e/_m0XoUnr and https://s.click.aliexpress.com/e/_mMr4UdT
+Recommended laser-etched glass files can be found here: [Glass File 1](https://s.click.aliexpress.com/e/_m0XoUnr) and [Glass File 2](https://s.click.aliexpress.com/e/_mMr4UdT).
 
-3. **Verification**:
-   - After filing, the plunger should move smoothly within the barrel without binding
-   - Minor resistance is acceptable and desirable for proper sealing
+Additional reference for the filing technique: [Instagram demonstration](https://www.instagram.com/reel/DQ77J7dAV2H/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==)
+
+### Verification
+
+After filing, the plunger should move smoothly within the barrel without binding. Minor resistance is acceptable and desirable for proper sealing.
 
 ## Assembly and Operation
 
@@ -80,7 +88,6 @@ The plunger side walls are intentionally printed at 0.05 mm thickness to achieve
 
 - `Barrel.step` - Complete square syringe barrel with integrated dispensing tip
 - `Plunger.step` - Square plunger with 0.05 mm thick side walls
-
 
 ## Notes
 
